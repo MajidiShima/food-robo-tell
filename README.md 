@@ -1,0 +1,51 @@
+#  Telegram Food Ordering Bot
+
+A Telegram-based food ordering system built with **Java 17** and **Spring Boot**.
+
+Users can select food items, enter quantity, and confirm or cancel their orders directly via Telegram.
+An Admin REST API is also provided for managing foods and viewing orders with filters.
+
+---
+
+## Features
+
+- Food selection via Telegram Inline Keyboard
+- Quantity input via chat messages
+- Order confirmation and cancellation
+- Order status management (DRAFT, CONFIRMED, CANCELED)
+- User session and state management
+- Admin REST API for order and food management
+
+---
+
+##  Bot Flow
+/start
+→ Select food
+→ Enter quantity
+→ Review order
+→ Confirm or Cancel
+
+---
+
+## 🏗 Architecture
+
+- Bot Layer (Telegram Bot)
+- Service Layer (Business Logic)
+- Repository Layer (Spring Data JPA)
+- Admin REST API
+
+---
+
+##  Tech Stack
+
+- Java 17
+- Spring Boot 3
+- Spring Data JPA
+- TelegramBots API
+- MySQL
+- Maven
+## ▶️ How to Run
+
+1. Configure application.yml
+2. Set Telegram Bot Token
+3. Run Spring Boot application
