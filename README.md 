@@ -49,3 +49,17 @@ An Admin REST API is also provided for managing foods and viewing orders with fi
 1. Configure application.yml
 2. Set Telegram Bot Token
 3. Run Spring Boot application
+
+ TEST
+ for test by postman
+ POST /api/admin/foods
+ {
+   "name": "pizza"
+ }
+ POST /api/admin/orders/search
+ {
+   "status": "CONFIRMED",
+   "from": "2025-01-01T00:00:00",
+   "to": "2025-12-31T23:59:59"
+ }
+
